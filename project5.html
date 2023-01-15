@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Website Design Using HTML and CSS</title>
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <section id="header" onclick=hide()>
+        <div class="container">
+            <img src="img5/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to<br> teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p id="adding">There are many variations of passages of lorem Ipsum available, but the majority have
+                    suufered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <button class="common-btn" onclick=add(); id="homereadhide" style="border-radius: 8px;">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="img5/menu.png" id="menuBtn">
+
+
+    <!-- About -->
+
+    <section id="about" onclick=hide()>
+        <div class="about-left-col">
+            <img src="img5/about.png" alt="About">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta sint tempore inventore quia,
+                    ipsam enim nam harum consectetur officia dignissimos voluptas nobis necessitatibus voluptatum quos
+                    expedita ad sed commodi voluptate. Suscipit at dolor et culpa totam incidunt error reiciendis neque
+                    ipsa ipsam sapiente autem non ullam ipsum a id, molestiae mollitia facere! Dolore pariatur quaerat
+                    quam magnam eaque!</p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>"Learning is not attained by chance, it must be sought for with ardor and attended to with
+                    diligence"</h2>
+                <h3>----Abigail adams</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features" onclick=hide()>
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="img5/pic-1.png" alt="png">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="img5/pic-2.png" alt="png">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="img5/pic-3.png" alt="png">
+                <h4>Unlimited Access</h4>
+                <p>Choose what you'd like to learn from our extensive subscription library.</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <!-- <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div> -->
+            <!-- <button class="common-btn" onclick=signUpFirs(); id="featu">Start Free Trial</button> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="common-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 10px;">
+                Start Free Trial
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Courses</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="container">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" style="background: #f2f6f6;">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Courses -->
+
+    <section id="courses" onclick=hide()>
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse Our Top <br>Courses</h1>
+                    <span class="square"></span>
+                    <p id="courseList">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi quos
+                        possimus,
+                        blanditiis nemo veritatis quo exercitationem totam ut voluptate. Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. </p>
+                    <button class="common-btn" onclick=course(); id="courseBtnHide" style="border-radius: 15px;">View All Courses</button>
+
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="img5/course.png" alt="courses">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Offers -->
+
+    <section id="offer" onclick=hide()>
+        <div class="about-left-col">
+            <img src="img5/offer.png" alt="About">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Limitless Learning,<br>Limitless Possibilities.</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta sint tempore inventore quia,
+                    ipsam enim nam harum consectetur officia dignissimos voluptas nobis necessitatibus voluptatum quos
+                    expedita ad sed commodi voluptate. </p>
+                <button class="common-btn" onclick=signUpFirst(); id="offers" style="border-radius: 30px;">Start Free Trial</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" onclick=hide()>
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to join our<br>Learning Community.</h1>
+                <form>
+                    <input type="text" placeholder="Enter Name" style="border-radius: 5px;">
+                    <input type="email" placeholder="Enter email" style="border-radius: 5px;">
+                    <input type="password" placeholder="Enter Password" style="border-radius: 5px;">
+                    <div class="btn-box">
+                        <button class="common-btn" style="border-radius: 5px;">Sign Up</button>
+                        <button class="common-btn" style="border-radius: 5px;">Start Free Trial</button>
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <div class="contact-right-col">
+                <img src="img5/contact.png" alt="contact">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section id="footer" onclick=hide()>
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQS</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find A nonprofile</small><br>
+                        <small>Corporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>support@Xypo.com</small><br>
+                        <small>copyright 2020 Xypo</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="img5/logo.png" alt="logo">
+                        <button class="common-btn" onclick="language();" id="lang">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social icons -->
+
+    <div class="social-icons">
+        <a href="https://facebook.com"><img src="img5/facebook.png" alt="facebook"></a>
+        <a href="https://instagram.com"><img src="img5/instagram.png" alt="instagram"></a>
+        <a href="https://twitter.com"><img src="img5/twitter.png" alt="twitter"></a>
+        <a href="https://linkedin.com"><img src="img5/linkedin.png" alt="linkedin"></a>
+    </div>
+
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+
+
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+
+        // var header = document.getElementById("header");
+
+
+        // header.onclick = function () {
+        //     sideNav.style.right = "-250px";
+        // }
+
+        // var about = document.getElementById("about");
+
+
+        // about.onclick = function () {
+        //     sideNav.style.right = "-250px";
+        // }
+
+        // var courses = document.getElementById("courses");
+
+
+        // courses.onclick = function () {
+        //     sideNav.style.right = "-250px";
+        // }
+
+        // var offer = document.getElementById("offer");
+
+
+        // offer.onclick = function () {
+        //     sideNav.style.right = "-250px";
+        // }
+
+        function hide() {                            // hides Sidebar
+            sideNav.style.right = "-250px";
+        }
+
+
+        function add() {
+            document.getElementById("adding").innerHTML += "<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, necessitatibus? Dolore nostrum culpa nihil porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Blanditiis, error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusamus, nostrum nulla temporibus debitis voluptatemeum omnis cupiditate suscipit a.";
+            // document.getElementById("homereadhide").style.visibility = "hidden";    // hides only content, but occupied space
+            document.getElementById("homereadhide").style.display = "none";  // removes the element and remove space oocupied
+        }
+
+        function course() {
+            document.getElementById("courseList").innerHTML += "<br><br><h5>Bussiness</h5><p>All about starting new bussiness<br>Rs.599</p><h5  id='bussiness'>Web Developer</h5><p>Complete Web Development Course<br>Rs.1399</p><h5 id='photo'>Photography</h5><p>Includes Photoshop, Canva and other Photography Basics<br>Rs.999</p><h5 id='market'>Marketing</h5><p>Basics of Marketing and Strategies<br>Rs.999</p>";
+            // document.getElementById("homereadhide").style.visibility = "hidden";    // hides only content, but occupied space
+            document.getElementById("courseBtnHide").style.display = "none";  // removes the element and remove space oocupied
+            document.getElementById("bussiness").style.color = "#f67c92";
+            document.getElementById("market").style.color = "orange";
+            document.getElementById("photo").style.color = "lightblue";
+        }
+
+        let offers = document.getElementById("offers");
+
+        // function signUpFirs() {
+        //     // document.getElementById("featu").innerHTML = "SignUp Alert !";
+        //     document.getElementById("featu").innerHTML = "<div class='alert alert-info' role='alert'>SignUp Alert !</div>";
+        //     document.getElementById("featu").style.border = "none";
+        //     // document.getElementById("featu").style.border = "thick solid #f67c92";
+        //     // document.getElementById("featu").style.borderRadius = "30px"
+        //     // document.getElementById("featu").style.color = "red";
+
+        // }
+
+        function signUpFirst() {
+            document.getElementById("offers").innerHTML = "SignUp Alert !";
+            // document.getElementById("offers").innerHTML = document.getElementById("signup").innerHTML;
+            // offers.style.backgroundColor = "red";
+            document.getElementById("offers").style.border = "thick solid lightblue";
+            document.getElementById("offers").style.borderRadius = "25%";
+            document.getElementById("offers").style.color = "red";
+            // document.getElementById("homereadhide").style.visibility = "hidden";    // hides only content, but occupied space
+            // document.getElementById("courseBtnHide").style.display = "none";  // removes the element and remove space oocupied
+        }
+
+        function language() {
+            document.getElementById("lang").innerHTML = "Spanish";
+            document.getElementById("lang").style.border = "2px solid lightpink";
+            document.getElementById("lang").style.borderRadius = "10px";
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
